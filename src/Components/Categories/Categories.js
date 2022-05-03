@@ -3,8 +3,7 @@ import useFetch from '../../Hooks/useFetch'
 import CategoriesLayout from '../../Layout/CategoriesLayout/CategoriesLayout'
 import CategoryItem from '../CategoryItem/CategoryItem'
 import Error from "../Error/Error";
-import error from "../Error/Error";
-import Loaidng from "../Loading/Loading";
+import Loading from "../Loading/Loading";
 
 
 const Categories = () => {
@@ -16,7 +15,7 @@ const Categories = () => {
                 error && <Error nessage={error.message}/>
             }
             {
-                loading && <Loaidng/>
+                loading && <Loading/>
             }
             {
                 data.categories &&
