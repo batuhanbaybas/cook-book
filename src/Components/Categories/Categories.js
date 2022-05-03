@@ -1,28 +1,31 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import useFetch from '../../Hooks/useFetch'
 import CategoriesLayout from '../../Layout/CategoriesLayout/CategoriesLayout'
-import { categorySelect } from '../../Redux/features/categorySlice'
 import CategoryItem from '../CategoryItem/CategoryItem'
-import Loaidng from '../Loading/Loaidng'
-
-
+import Error from "../Error/Error";
+import error from "../Error/Error";
+import Loaidng from "../Loading/Loading";
 
 
 const Categories = () => {
-    const category = useSelector(categorySelect)
+    const {data, error, loading} = useFetch('https://www.themealdb.com/api/json/v1/1/categories.php')
     return (
 
         <CategoriesLayout>
             {
-                category.loading && <Loaidng />
+                error && <Error nessage={error.message}/>
             }
             {
-                category.categories.categories?.length > 0 && category.categories.categories.map(item => (
+                loading && <Loaidng/>
+            }
+            {
+                data.categories &&
+                data.categories.map(item => (
                     <CategoryItem
                         key={item.idCategory}
                         src={item.strCategoryThumb}
                         alt={item.strCategory}
-                        categoriName={item.strCategory} />
+                        categoriName={item.strCategory}/>
 
                 ))
             }

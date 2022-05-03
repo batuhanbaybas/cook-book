@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Loaidng = () => {
+const Loading = () => {
     return (
         <div className='text-center'>Loaidng...</div>
     )
 }
 
-export default Loaidng
+export default Loading
