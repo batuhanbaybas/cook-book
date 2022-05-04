@@ -14,3 +14,5 @@ https://www.themealdb.com/api.php
 - Custom Hooks
 - axios
 - tailwindcss
+- Redux
+- Metarial Ui İcons
