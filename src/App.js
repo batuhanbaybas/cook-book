@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import MainLayout from "./Layout/MainLayout/MainLayout";
 import DetailPage from "./Pages/DetailPage";
 import HomePage from "./Pages/HomePage";
+import FavoritePage from "./Pages/FavoritePage";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/meal/:id" element={<DetailPage />} />
         <Route path="/:category" element={<Content />} />
+        <Route path="/favoriler" element={<FavoritePage />} />
         <Route path="/" element={<HomePage />} />
       </Routes>
     </MainLayout>
