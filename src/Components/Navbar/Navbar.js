@@ -20,8 +20,8 @@ const Navbar = () => {
                             <>
                                 <FavoriteIcon className='ml-2' />
 
-                                <div className='absolute -top-3 -left-3 w-8 h-8  border-2 flex justify-center items-center rounded-full bg-red-500'>
-                                    <div className='text-center text-sm text-white'>
+                                <div className='absolute -top-3 -left-3 w-8 h-8  border-2 flex justify-center items-center rounded-full bg-secondary-default'>
+                                    <div className='text-center text-sm text-text_color-light'>
                                         {favorite.length}
                                     </div>
 

@@ -15,7 +15,7 @@ const Cardİtem = (props) => {
     }
     return (
         <CardLayout>
-            <div onClick={() => handleAdd(props)} className='absolute top-7 left-7 bg-white border-2 rounded-full'>
+            <div onClick={() => handleAdd(props)} className='absolute top-7 left-7 bg-primary-light border-2 rounded-full'>
                 <IconButton >
                     {
                         favorite.some(item => item.id === props.id) ?

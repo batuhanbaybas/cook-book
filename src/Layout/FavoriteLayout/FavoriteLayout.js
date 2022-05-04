@@ -4,7 +4,7 @@ import ContentLayout from '../ContentLayout/ContentLayout'
 const FavoriteLayout = ({ children }) => {
     return (
         <ContentLayout>
-            <div className='w-10/12 min-h-fit mx-auto border-2 bg-white'>
+            <div className='w-10/12 min-h-fit mx-auto border-2 bg-primary-light'>
                 <h3 className='text-2xl text-center py-5'>Favori Tarifler</h3>
              
                     {children}

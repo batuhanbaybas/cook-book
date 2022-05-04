@@ -10,7 +10,7 @@ const Detail = ({ meal }) => {
                     <h2 className='text-3xl'>
                         {meal.strMeal} / {meal.strCategory}
                     </h2>
-                    <div className='bg-red-500 p-2 text-white rounded-3xl'>
+                    <div className='bg-secondary-default p-2 text-text_color-light rounded-3xl'>
                         <a href={meal.strYoutube} target='_blank' rel='noopener noreferrer'> Watch On YouTube</a>
                     </div>
                 </div>
