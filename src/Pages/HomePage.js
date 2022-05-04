@@ -1,4 +1,5 @@
 
+import { BASE_URL } from '../Comon/Common';
 import Detail from '../Components/Detail/Detail'
 import Error from '../Components/Error/Error';
 
@@ -7,7 +8,7 @@ import useFetch from '../Hooks/useFetch';
 import ContentLayout from '../Layout/ContentLayout/ContentLayout';
 
 const HomePage = () => {
-    const { data, error, loading } = useFetch(`https://www.themealdb.com/api/json/v1/1/random.php`);
+    const { data, error, loading } = useFetch(`${BASE_URL}random.php`);
     return (
         <ContentLayout>
             {
