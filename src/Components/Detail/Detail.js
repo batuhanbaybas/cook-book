@@ -11,7 +11,7 @@ const Detail = ({ meal }) => {
                         {meal.strMeal} / {meal.strCategory}
                     </h2>
                     <div className='bg-red-500 p-2 text-white rounded-3xl'>
-                        <a href={meal.strYoutube} target='_blank' rel='noopener noreferrer'> Watch On Video</a>
+                        <a href={meal.strYoutube} target='_blank' rel='noopener noreferrer'> Watch On YouTube</a>
                     </div>
                 </div>
                 <div className={"flex flex-1 mt-5"}>
