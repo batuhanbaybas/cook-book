@@ -1,4 +1,4 @@
-import { FavoriteBorderSharp } from '@mui/icons-material';
+import { FavoriteBorderSharp } from '@mui/icons-material'
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { IconButton } from '@mui/material'
 import React from 'react'
