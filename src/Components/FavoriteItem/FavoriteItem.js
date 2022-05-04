@@ -12,7 +12,7 @@ const FavoriteItem = (props) => {
     return (
         <div className='mx-52 border-2 my-3 min-h-fit p-5 '>
             <div className='flex items-center px-10'>
-                <Link to={`/meal/${props.id}`} className='flex items-center'>
+                <Link to={`/meal/${props.itemId}`} className='flex items-center'>
                     <img src={props.src} alt={props.cardHeader}
                         className='w-20 h-20  object-cover object-center rounded-full' />
                     <div className='ml-5'>{props.cardHeader}</div>
