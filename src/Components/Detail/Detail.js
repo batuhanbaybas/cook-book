@@ -2,6 +2,8 @@ import React from 'react'
 import DetailLayout from '../../Layout/DetailLayout/DetailLayout'
 
 const Detail = ({ meal }) => {
+    
+
     return (
         <DetailLayout>
             <img src={meal.strMealThumb} alt='' className='w-1/4 h-full object-contain px-5 border-r-2 ' />
